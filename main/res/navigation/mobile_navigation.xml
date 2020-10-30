@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_loans">
+
+    <fragment
+        android:id="@+id/navigation_loans"
+        android:name="com.example.casherv2.ui.loans.LoansFragment"
+        android:label="@string/title_loans"
+        tools:layout="@layout/fragment_loans" />
+
+    <fragment
+        android:id="@+id/navigation_transactions"
+        android:name="com.example.casherv2.ui.transactions.TransactionsFragment"
+        android:label="@string/title_transactions"
+        tools:layout="@layout/fragment_transactions" />
+</navigation>
